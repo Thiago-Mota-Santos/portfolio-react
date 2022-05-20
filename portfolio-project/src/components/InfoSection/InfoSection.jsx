@@ -8,7 +8,9 @@ import {
      TextWrapper, 
      TopLine,
      Heading,
-     SubTitle
+     SubTitle,
+     ImgWrapper,
+     Img
     } from './InfoSectionElements'
 
 const InfoSection = ({
@@ -21,8 +23,14 @@ const InfoSection = ({
     description,
     headline,
     lightText,
-    topLine
+    topLine,
+    img,
+    alt,
+    start
 }) => {
+
+  console.log(img);
+
   return (
     <>
       <InfoSec lightBg={lightBg}>
@@ -41,6 +49,9 @@ const InfoSection = ({
                     </Link>
                     </TextWrapper>
                 </InfoCol>
+                <ImgWrapper start={start}>
+                  <Img src={img} alt={alt}/>
+                </ImgWrapper>
             </InfoRow>
          </Container>
       </InfoSec>

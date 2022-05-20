@@ -1,6 +1,6 @@
 import  React from 'react'
 import  GlobalStyle from './globalStyles'
-import { Navbar } from './components'
+import { Navbar, Footer } from './components'
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/HomePage/Home';
 // import { useState } from 'react'
@@ -20,6 +20,9 @@ function App() {
       <Routes>
         <Route path='/' element = {<Home/>}/>
       </Routes>
+      <Routes> 
+      <Route path='/' element = {<Footer/>}/>
+      </Routes> 
     </BrowserRouter>
 
   // {/* <>
