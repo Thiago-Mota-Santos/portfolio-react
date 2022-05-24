@@ -40,6 +40,7 @@ const Navbar = () => {
 
 
   const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   console.log(click);
 
@@ -48,7 +49,7 @@ const Navbar = () => {
     <IconContext.Provider value= {{ color: '#fff'}}>
     <Nav>
       <NavbarContainer>
-        <NavLogo to='/'>
+        <NavLogo to='/' onClick={closeMobileMenu}>
           <NavIcon/>
             NXI
         </NavLogo>

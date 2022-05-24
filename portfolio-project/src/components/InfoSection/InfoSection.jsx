@@ -28,9 +28,6 @@ const InfoSection = ({
     alt,
     start
 }) => {
-
-  console.log(img);
-
   return (
     <>
       <InfoSec lightBg={lightBg}>
